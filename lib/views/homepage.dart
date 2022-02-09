@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/responsive/desktop.dart';
-import 'package:myfirstapp/responsive/mobile.dart';
-import 'package:myfirstapp/responsive/responsive_layout.dart';
-import 'package:myfirstapp/responsive/tablet.dart';
-import 'package:myfirstapp/responsive/tiny.dart';
-import 'package:myfirstapp/responsive/ultrawide.dart';
+import 'package:myfirstapp/layouts/desktop.dart';
+import 'package:myfirstapp/layouts/mobile.dart';
+import 'package:myfirstapp/layouts/responsive_layout.dart';
+import 'package:myfirstapp/layouts/tablet.dart';
+import 'package:myfirstapp/layouts/tiny.dart';
+import 'package:myfirstapp/layouts/ultrawide.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

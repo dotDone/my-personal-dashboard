@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/Widgets/test_column.dart';
+
+import '../utils/test_column.dart';
 
 class TabletBody extends StatelessWidget {
   const TabletBody({Key? key}) : super(key: key);

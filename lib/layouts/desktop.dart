@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/Widgets/test_column.dart';
+
+import '../utils/test_column.dart';
 
 class DesktopBody extends StatelessWidget {
   const DesktopBody({Key? key}) : super(key: key);

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/responsive/dimensions.dart';
+
+import '../config/dimensions.dart';
 
 class ResponsiveLayout extends StatelessWidget {
   final Widget tiny;
