@@ -12,10 +12,40 @@ class CustomTheme with ChangeNotifier {
   }
 
   static ThemeData get lightTheme {
-    return ThemeData();
+    return ThemeData(
+      // Custom themedata - light
+      colorScheme: ColorScheme.fromSwatch(
+        primarySwatch: Colors.deepPurple,
+      ).copyWith(
+        secondary: Colors.amber,
+      ),
+      textTheme: TextTheme(
+        headline1: TextStyle(
+          color: Colors.white,
+        ),
+        bodyText1: TextStyle(
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 
   static ThemeData get darkTheme {
-    return ThemeData();
+    return ThemeData(
+      // Custom themedata - dark
+      colorScheme: ColorScheme.fromSwatch(
+        primarySwatch: Colors.deepOrange,
+      ).copyWith(
+        secondary: Colors.green,
+      ),
+      textTheme: TextTheme(
+        headline1: TextStyle(
+          color: Colors.white,
+        ),
+        bodyText1: TextStyle(
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }
