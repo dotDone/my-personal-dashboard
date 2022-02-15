@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 CustomTheme currentTheme = CustomTheme();
 
@@ -32,6 +33,9 @@ class CustomTheme with ChangeNotifier {
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.red,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Colors.red,
+        ),
       ),
     );
   }
@@ -57,6 +61,9 @@ class CustomTheme with ChangeNotifier {
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.red,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Colors.red,
+        ),
       ),
       drawerTheme: DrawerThemeData(
         backgroundColor: Colors.grey[800],

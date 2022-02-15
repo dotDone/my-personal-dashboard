@@ -34,6 +34,7 @@ class _MyAppState extends State<MyApp> {
     NavigationController navigation =
         Provider.of<NavigationController>(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My First App',
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,
