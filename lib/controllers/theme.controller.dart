@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 CustomTheme currentTheme = CustomTheme();
 
@@ -27,6 +28,15 @@ class CustomTheme with ChangeNotifier {
           color: Colors.white,
         ),
       ),
+      listTileTheme: ListTileThemeData(
+        tileColor: Colors.blue,
+      ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.red,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Colors.red,
+        ),
+      ),
     );
   }
 
@@ -45,6 +55,18 @@ class CustomTheme with ChangeNotifier {
         bodyText1: TextStyle(
           color: Colors.white,
         ),
+      ),
+      listTileTheme: ListTileThemeData(
+        tileColor: Colors.blue,
+      ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.red,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Colors.red,
+        ),
+      ),
+      drawerTheme: DrawerThemeData(
+        backgroundColor: Colors.grey[800],
       ),
     );
   }
