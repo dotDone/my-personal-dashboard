@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myfirstapp/views/all.dart';
 import 'package:myfirstapp/controllers/all.controllers.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(
       MultiProvider(
@@ -9,7 +10,7 @@ void main() => runApp(
           ListenableProvider<NavigationController>(
               create: (_) => NavigationController())
         ],
-        child: const MyApp(),
+        child: MyApp(),
       ),
     );
 
@@ -41,7 +42,7 @@ class _MyAppState extends State<MyApp> {
       themeMode: currentTheme.currentTheme,
       home: Navigator(
         pages: [
-          const MaterialPage(child: WelcomePage()),
+          MaterialPage(child: HomePage()),
           if (navigation.screenName == '/homepage')
             const MaterialPage(child: HomePage()),
           if (navigation.screenName == '/welcome')
@@ -59,7 +60,7 @@ class _MyAppState extends State<MyApp> {
           bool popStatus = route.didPop(result);
           if (popStatus == true) {
             Provider.of<NavigationController>(context, listen: false)
-                .changeScreen('/', NavigationItem.welcome);
+                .changeScreen('/', NavigationItem.homepage);
           }
           return popStatus;
         },

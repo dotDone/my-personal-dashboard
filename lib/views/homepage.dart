@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/components/my_drawer.dart';
 import 'package:myfirstapp/controllers/theme.controller.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -24,6 +25,13 @@ class HomePage extends StatelessWidget {
               currentTheme.toggleTheme();
             },
             icon: Icon(Icons.brightness_4_rounded),
+          ),
+          IconButton(
+            onPressed: () async {
+              final prefs = await SharedPreferences.getInstance();
+              prefs.setBool('showHome', false);
+            },
+            icon: Icon(Icons.logout),
           ),
         ],
       ),

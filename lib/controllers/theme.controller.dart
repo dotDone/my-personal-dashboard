@@ -20,7 +20,7 @@ class CustomTheme with ChangeNotifier {
       ).copyWith(
         secondary: Colors.amber,
       ),
-      textTheme: TextTheme(
+      textTheme: const TextTheme(
         headline1: TextStyle(
           color: Colors.white,
         ),
@@ -28,13 +28,13 @@ class CustomTheme with ChangeNotifier {
           color: Colors.white,
         ),
       ),
-      listTileTheme: ListTileThemeData(
+      listTileTheme: const ListTileThemeData(
         tileColor: Colors.blue,
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: Colors.red,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Colors.red,
+          statusBarColor: Colors.transparent,
         ),
       ),
     );
@@ -48,7 +48,7 @@ class CustomTheme with ChangeNotifier {
       ).copyWith(
         secondary: Colors.green,
       ),
-      textTheme: TextTheme(
+      textTheme: const TextTheme(
         headline1: TextStyle(
           color: Colors.white,
         ),
@@ -56,13 +56,13 @@ class CustomTheme with ChangeNotifier {
           color: Colors.white,
         ),
       ),
-      listTileTheme: ListTileThemeData(
+      listTileTheme: const ListTileThemeData(
         tileColor: Colors.blue,
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: Colors.red,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Colors.red,
+          statusBarColor: Colors.transparent,
         ),
       ),
       drawerTheme: DrawerThemeData(
